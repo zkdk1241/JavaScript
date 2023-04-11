@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+
+    let txt = 'abcdefghij' 
+    document.writeln(txt.slice(1,4))
+    document.writeln(txt.slice(3))
+    document.writeln(txt.slice(3, 1))
+    document.writeln(txt.substring(3, 1))
+    document.writeln(txt.substring(2, -3))
+
+    let txt2 = 'paullab CEO leegojun CEO'
+    txt2 = txt2.replace('CEO', 'CDO').includes('CDO').toString().toUpperCase()
+    document.writeln(txt2)
+
+    let text1 = 'aa bb cc dd'
+    let text2 = 'aa-bb-cc-dd'
+    let text3 = 'aa,bb,cc,dd'
+    let text4 = 'aa,bb-cc-dd'
+    document.writeln(text1.split(' '))
+    document.writeln(text2.split('-'))
+    document.writeln(text2.replace(',','-').split('-'))
+
+
+
+</script>
+</body>
+
+</html>
